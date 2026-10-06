@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.env
+.env.*
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+__MACOSX/
+_site/
+qa-artifacts/

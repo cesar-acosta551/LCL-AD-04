@@ -1,0 +1,312 @@
+{
+  "project": "LCL-AD-04 \u2014 Lenker Display Ads",
+  "version": "1.0.0",
+  "type": "static-html5-ad-library",
+  "concept_count": 4,
+  "format_count": 6,
+  "ad_count": 24,
+  "ads": [
+    {
+      "id": "A-300x250",
+      "concept": "A",
+      "concept_name": "The Number",
+      "headline": "This ad is for about 400 people.",
+      "cta": "Why me?",
+      "width": 300,
+      "height": 250,
+      "file": "ads/Lenker_A_300x250.html"
+    },
+    {
+      "id": "A-336x280",
+      "concept": "A",
+      "concept_name": "The Number",
+      "headline": "This ad is for about 400 people.",
+      "cta": "Why me?",
+      "width": 336,
+      "height": 280,
+      "file": "ads/Lenker_A_336x280.html"
+    },
+    {
+      "id": "A-160x600",
+      "concept": "A",
+      "concept_name": "The Number",
+      "headline": "This ad is for about 400 people.",
+      "cta": "Why me?",
+      "width": 160,
+      "height": 600,
+      "file": "ads/Lenker_A_160x600.html"
+    },
+    {
+      "id": "A-300x600",
+      "concept": "A",
+      "concept_name": "The Number",
+      "headline": "This ad is for about 400 people.",
+      "cta": "Why me?",
+      "width": 300,
+      "height": 600,
+      "file": "ads/Lenker_A_300x600.html"
+    },
+    {
+      "id": "A-1080x1080",
+      "concept": "A",
+      "concept_name": "The Number",
+      "headline": "This ad is for about 400 people.",
+      "cta": "Why me?",
+      "width": 1080,
+      "height": 1080,
+      "file": "ads/Lenker_A_1080x1080.html"
+    },
+    {
+      "id": "A-1200x628",
+      "concept": "A",
+      "concept_name": "The Number",
+      "headline": "This ad is for about 400 people.",
+      "cta": "Why me?",
+      "width": 1200,
+      "height": 628,
+      "file": "ads/Lenker_A_1200x628.html"
+    },
+    {
+      "id": "B-300x250",
+      "concept": "B",
+      "concept_name": "We did our job",
+      "headline": "If you're seeing this, we did our job.",
+      "cta": "See how",
+      "width": 300,
+      "height": 250,
+      "file": "ads/Lenker_B_300x250.html"
+    },
+    {
+      "id": "B-336x280",
+      "concept": "B",
+      "concept_name": "We did our job",
+      "headline": "If you're seeing this, we did our job.",
+      "cta": "See how",
+      "width": 336,
+      "height": 280,
+      "file": "ads/Lenker_B_336x280.html"
+    },
+    {
+      "id": "B-160x600",
+      "concept": "B",
+      "concept_name": "We did our job",
+      "headline": "If you're seeing this, we did our job.",
+      "cta": "See how",
+      "width": 160,
+      "height": 600,
+      "file": "ads/Lenker_B_160x600.html"
+    },
+    {
+      "id": "B-300x600",
+      "concept": "B",
+      "concept_name": "We did our job",
+      "headline": "If you're seeing this, we did our job.",
+      "cta": "See how",
+      "width": 300,
+      "height": 600,
+      "file": "ads/Lenker_B_300x600.html"
+    },
+    {
+      "id": "B-1080x1080",
+      "concept": "B",
+      "concept_name": "We did our job",
+      "headline": "If you're seeing this, we did our job.",
+      "cta": "See how",
+      "width": 1080,
+      "height": 1080,
+      "file": "ads/Lenker_B_1080x1080.html"
+    },
+    {
+      "id": "B-1200x628",
+      "concept": "B",
+      "concept_name": "We did our job",
+      "headline": "If you're seeing this, we did our job.",
+      "cta": "See how",
+      "width": 1200,
+      "height": 628,
+      "file": "ads/Lenker_B_1200x628.html"
+    },
+    {
+      "id": "C-300x250",
+      "concept": "C",
+      "concept_name": "We found you",
+      "headline": "We found the 400 marketing leaders worth reaching.",
+      "cta": "Show me",
+      "width": 300,
+      "height": 250,
+      "file": "ads/Lenker_C_300x250.html"
+    },
+    {
+      "id": "C-336x280",
+      "concept": "C",
+      "concept_name": "We found you",
+      "headline": "We found the 400 marketing leaders worth reaching.",
+      "cta": "Show me",
+      "width": 336,
+      "height": 280,
+      "file": "ads/Lenker_C_336x280.html"
+    },
+    {
+      "id": "C-160x600",
+      "concept": "C",
+      "concept_name": "We found you",
+      "headline": "We found the 400 marketing leaders worth reaching.",
+      "cta": "Show me",
+      "width": 160,
+      "height": 600,
+      "file": "ads/Lenker_C_160x600.html"
+    },
+    {
+      "id": "C-300x600",
+      "concept": "C",
+      "concept_name": "We found you",
+      "headline": "We found the 400 marketing leaders worth reaching.",
+      "cta": "Show me",
+      "width": 300,
+      "height": 600,
+      "file": "ads/Lenker_C_300x600.html"
+    },
+    {
+      "id": "C-1080x1080",
+      "concept": "C",
+      "concept_name": "We found you",
+      "headline": "We found the 400 marketing leaders worth reaching.",
+      "cta": "Show me",
+      "width": 1080,
+      "height": 1080,
+      "file": "ads/Lenker_C_1080x1080.html"
+    },
+    {
+      "id": "C-1200x628",
+      "concept": "C",
+      "concept_name": "We found you",
+      "headline": "We found the 400 marketing leaders worth reaching.",
+      "cta": "Show me",
+      "width": 1200,
+      "height": 628,
+      "file": "ads/Lenker_C_1200x628.html"
+    },
+    {
+      "id": "D-300x250",
+      "concept": "D",
+      "concept_name": "No waste",
+      "headline": "No wasted impressions.",
+      "cta": "See how",
+      "width": 300,
+      "height": 250,
+      "file": "ads/Lenker_D_300x250.html"
+    },
+    {
+      "id": "D-336x280",
+      "concept": "D",
+      "concept_name": "No waste",
+      "headline": "No wasted impressions.",
+      "cta": "See how",
+      "width": 336,
+      "height": 280,
+      "file": "ads/Lenker_D_336x280.html"
+    },
+    {
+      "id": "D-160x600",
+      "concept": "D",
+      "concept_name": "No waste",
+      "headline": "No wasted impressions.",
+      "cta": "See how",
+      "width": 160,
+      "height": 600,
+      "file": "ads/Lenker_D_160x600.html"
+    },
+    {
+      "id": "D-300x600",
+      "concept": "D",
+      "concept_name": "No waste",
+      "headline": "No wasted impressions.",
+      "cta": "See how",
+      "width": 300,
+      "height": 600,
+      "file": "ads/Lenker_D_300x600.html"
+    },
+    {
+      "id": "D-1080x1080",
+      "concept": "D",
+      "concept_name": "No waste",
+      "headline": "No wasted impressions.",
+      "cta": "See how",
+      "width": 1080,
+      "height": 1080,
+      "file": "ads/Lenker_D_1080x1080.html"
+    },
+    {
+      "id": "D-1200x628",
+      "concept": "D",
+      "concept_name": "No waste",
+      "headline": "No wasted impressions.",
+      "cta": "See how",
+      "width": 1200,
+      "height": 628,
+      "file": "ads/Lenker_D_1200x628.html"
+    }
+  ],
+  "repository": "cesar-acosta551/LCL-AD-04",
+  "repository_url": "https://github.com/cesar-acosta551/LCL-AD-04",
+  "gallery_url": "https://cesar-acosta551.github.io/LCL-AD-04/",
+  "execution_count": 24,
+  "concepts": [
+    {
+      "id": "A",
+      "name": "The Number",
+      "cta": "Why me?",
+      "image": "assets/A.jpeg"
+    },
+    {
+      "id": "B",
+      "name": "We did our job",
+      "cta": "See how",
+      "image": "assets/B.jpeg"
+    },
+    {
+      "id": "C",
+      "name": "We found you",
+      "cta": "Show me",
+      "image": "assets/C.jpeg"
+    },
+    {
+      "id": "D",
+      "name": "No waste",
+      "cta": "See how",
+      "image": "assets/D.png"
+    }
+  ],
+  "formats": [
+    {
+      "width": 300,
+      "height": 250
+    },
+    {
+      "width": 336,
+      "height": 280
+    },
+    {
+      "width": 160,
+      "height": 600
+    },
+    {
+      "width": 300,
+      "height": 600
+    },
+    {
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "width": 1200,
+      "height": 628
+    }
+  ],
+  "paths": {
+    "gallery": "index.html",
+    "ads": "ads/",
+    "assets": "assets/",
+    "validator": "scripts/validate.py"
+  }
+}

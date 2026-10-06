@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=300, initial-scale=1.0">
+<meta name="ad.size" content="width=300,height=250">
+<title>Lenker A 300x250</title>
+<style>
+html,body{margin:0;padding:0;width:300px;height:250px;overflow:hidden;background:#122e49;}
+body{font-family:Inter, Arial, Helvetica, sans-serif;}
+*{box-sizing:border-box;}
+a.ad{position:relative;display:block;width:300px;height:250px;overflow:hidden;color:#fff;text-decoration:none;background:#122e49;}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:56% 36%;transform:scale(1.02);animation:bgFloat 10s ease-in-out infinite alternate;}
+.overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(15,30,46,.05) 0%, rgba(15,30,46,.18) 48%, rgba(18,46,73,.88) 100%), linear-gradient(90deg, rgba(18,46,73,.62) 0%, rgba(18,46,73,.26) 46%, rgba(18,46,73,0) 100%);}
+.content{position:absolute;left:20px;right:20px;bottom:20px;display:flex;flex-direction:column;align-items:flex-start;gap:8px;z-index:2;max-width:59%;}
+.logo{position:absolute;left:20px;top:20px;z-index:2;font-size:14px;font-weight:700;letter-spacing:4.48px;line-height:1;color:#fff;}
+.headline{font-size:19px;line-height:0.95;font-weight:700;letter-spacing:-0.03em;color:#fff;}
+.headline .accent{color:#d5eb3c;}
+.subhead{font-size:8.5px;line-height:1.18;font-weight:400;color:rgba(255,255,255,.95);max-width:100%;}
+.cta{display:inline-flex;align-items:center;justify-content:center;padding:9px 18px;background:#d5eb3c;color:#10263c;border-radius:4px;font-size:7.5px;font-weight:700;line-height:1;white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.12);}
+.click{position:absolute;inset:0;z-index:3;}
+.legal{display:none;}
+@keyframes bgFloat{0%{transform:scale(1.02) translate3d(0,0,0);}100%{transform:scale(1.07) translate3d(0,-1.5%,0);}}
+</style>
+<script>
+function getExitUrl(){
+  if (window.clickTag) return window.clickTag;
+  const params = new URLSearchParams(window.location.search);
+  return params.get('clickTag') || 'https://www.lenker.com/';
+}
+function handleClick(e){
+  e.preventDefault();
+  window.open(getExitUrl(), '_blank');
+}
+</script>
+</head>
+<body>
+<a class="ad" href="#" onclick="handleClick(event)">
+  <img class="bg" src="../assets/A.jpeg" alt="">
+  <div class="overlay"></div>
+  <div class="logo">LENKER</div>
+  <div class="content">
+    <div class="headline">This ad is<br>for about<br><span class="accent">400</span> people.</div>
+    <div class="subhead">Marketing leaders in<br>Minnesota. You're one.</div>
+    <div class="cta">Why me?</div>
+  </div>
+</a>
+</body>
+</html>
