@@ -308,5 +308,8 @@
     "ads": "ads/",
     "assets": "assets/",
     "validator": "scripts/validate.py"
-  }
+  },
+  "pages_url": "https://cesar-acosta551.github.io/LCL-AD-04/",
+  "ads_path": "ads/",
+  "assets_path": "assets/"
 }

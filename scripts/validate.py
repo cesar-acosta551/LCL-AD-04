@@ -97,6 +97,26 @@ def main():
     for rel in ('index.html', 'README.md', 'manifest.json', 'NOTICE.md', '.github/workflows/pages.yml', '.nojekyll'):
         if not (ROOT / rel).is_file():
             fail(f'missing required file: {rel}')
+    # Documentation examples may contain localhost/file URLs, but release URLs
+    # and repository names must identify this release consistently.
+    for rel in ('README.md', 'index.html', 'manifest.json', '.github/workflows/pages.yml'):
+        path = ROOT / rel
+        if not path.is_file():
+            continue
+        content = path.read_text(encoding='utf-8')
+        if re.search(r'lenker-display-ads|Lenker-ads2|LCL-ads-3', content, re.I):
+            fail(f'{rel}: stale repository reference')
+        for url in re.findall(r'https://(?:github\.com/cesar-acosta551|cesar-acosta551\.github\.io)/[^\s<>\)\x22]+', content):
+            parsed = urlsplit(url)
+            release_name = parsed.path.strip('/').split('/')[1 if parsed.hostname == 'github.com' else 0]
+            if release_name != 'LCL-AD-04':
+                fail(f'{rel}: unexpected release URL')
+        if rel == 'README.md':
+            if '# LCL-AD-04 — Lenker Display Ads' not in content:
+                fail('README.md: missing release title')
+            for url in (f'https://github.com/{REPOSITORY}', 'https://cesar-acosta551.github.io/LCL-AD-04/'):
+                if url not in content:
+                    fail('README.md: missing canonical release URL')
     actual = {p.relative_to(ROOT).as_posix() for p in (ROOT / 'ads').rglob('*.html')}
     for rel in sorted(set(EXPECTED) - actual):
         fail(f'missing ad: {rel}')
@@ -154,6 +174,8 @@ def main():
         for key, expected in {'project': 'LCL-AD-04 — Lenker Display Ads', 'repository': REPOSITORY,
                               'repository_url': f'https://github.com/{REPOSITORY}',
                               'gallery_url': 'https://cesar-acosta551.github.io/LCL-AD-04/',
+                              'pages_url': 'https://cesar-acosta551.github.io/LCL-AD-04/',
+                              'ads_path': 'ads/', 'assets_path': 'assets/',
                               'concept_count': 4, 'format_count': 6, 'ad_count': 24, 'execution_count': 24}.items():
             if manifest.get(key) != expected:
                 fail(f'manifest: incorrect {key}')
@@ -181,7 +203,12 @@ def main():
     for problem in sorted(invalid_paths):
         fail(f'invalid production path: {problem}')
     print('FAIL' if errors else 'PASS')
-    print(f'{len(actual)} ads\n4 concepts\n6 formats\n{len(missing_assets)} missing assets\n{len(invalid_paths)} invalid local paths')
+    present = set(EXPECTED).intersection(actual)
+    concept_count = len({EXPECTED[rel][0] for rel in present})
+    format_count = len({EXPECTED[rel][1:] for rel in present})
+    dimension_errors = sum('ad.size metadata' in e or 'canvas dimensions' in e or 'native dimensions' in e for e in errors)
+    print(f'Project: LCL-AD-04\nConcepts: {concept_count}\nFormats: {format_count}\nPrimary executions: {len(present)}')
+    print(f'Missing ads: {len(set(EXPECTED) - actual)}\nMissing assets: {len(missing_assets)}\nInvalid local paths: {len(invalid_paths)}\nDimension errors: {dimension_errors}')
     for error in errors:
         print(f'- {error}')
     return 1 if errors else 0

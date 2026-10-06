@@ -3,9 +3,9 @@
 A lightweight static review gallery and handoff library for the approved Lenker display-ad campaign: **4 concepts × 6 formats = 24 standalone HTML executions**. No framework, build step, npm dependencies, or external asset service is required.
 
 **Repository:** [cesar-acosta551/LCL-AD-04](https://github.com/cesar-acosta551/LCL-AD-04)  
-**Public gallery (deployment target):** [LCL-AD-04 gallery](https://cesar-acosta551.github.io/LCL-AD-04/)
+**Public gallery:** [LCL-AD-04 gallery](https://cesar-acosta551.github.io/LCL-AD-04/)
 
-Publication is pending. These URLs identify the intended release; local validation does not establish a successful public deployment.
+Deployment status is available in the repository’s Actions tab. Verify the public gallery after each deployment; local validation alone does not establish deployment success.
 
 ## Creative concepts
 
